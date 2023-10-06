@@ -1,0 +1,19 @@
+{
+  "name": "translate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}'",
+    "deploy": "npm run format && wrangler deploy",
+    "start": "wrangler dev --remote"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231002.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "wrangler": "^3.11.0"
+  },
+  "dependencies": {
+    "@cloudflare/ai": "^1.0.15"
+  }
+}
